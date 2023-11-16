@@ -1,0 +1,145 @@
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    --blue-font: #f66987;
+    --background-color: #0f1218;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 20px 100px;
+}
+
+.subtitle-title {
+    font-style: italic;
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    background-color: #161c29;
+    text-align: left;
+    border-radius: 25px;
+}
+
+.card-title {
+    font-size: 26px;
+    margin-left: 15px;
+}
+
+.card-description {
+    padding: 10px 10px 5px 10px;
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56%; /* for 16:9 aspect ratio */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    font-size: 2em;
+}
+
+.photo {
+    width: 50%;
+}
+
+.main-container {
+    font-family: monospace;
+    font-size: 18px;
+    display: grid;
+    column-gap: 1em;
+    row-gap: 1em;
+    color: var(--blue-font);
+    background-color: var(--background-color);
+    justify-content: center;
+    text-align: center;
+
+    grid-template: 
+        "ban"
+        "sub"
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+    ;
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        grid-template: 
+            "ban ban ban ban ban ban" minmax(6em, auto)
+            "sub sub sub sub sub sub" minmax(auto, auto)
+            "c1 c1 c1 c2 c2 c2" minmax(6em, auto)
+            "c3 c3 c4 c4 c5 c5" minmax(6em, auto)
+            "c6 c7 c7 c7 c8 c8" minmax(3em, 16em)
+            "c9 c7 c7 c7 c8 c8" minmax(3em, 16em)
+        ;
+    }
+}
+
+#banner1 {
+    grid-area: ban;
+}
+
+#subtitle1 {
+    grid-area: sub;
+}
+
+#card1 {
+    grid-area: c1;
+}
+
+#card2 {
+    grid-area: c2;
+}
+
+#card3 {
+    grid-area: c3;
+}
+
+#card4 {
+    grid-area: c4;
+}
+
+#card5 {
+    grid-area: c5;
+}
+
+#card6 {
+    grid-area: c6;
+}
+
+#card7 {
+    grid-area: c7;
+}
+
+#card8 {
+    grid-area: c8;
+}
+
+#card9 {
+    grid-area: c9;
+}
