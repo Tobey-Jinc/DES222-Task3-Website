@@ -61,8 +61,10 @@ body {
     font-size: 2em;
 }
 
-.photo {
-    width: 50%;
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
 .main-container {
@@ -83,7 +85,13 @@ body {
         "c2"
         "c3"
         "c4"
+        "st1"
         "c5"
+        "c7"
+        "c8"
+        "c6"
+        "c9"
+        "-"
     ;
 }
 
@@ -94,8 +102,10 @@ body {
             "sub sub sub sub sub sub" minmax(auto, auto)
             "c1 c1 c1 c2 c2 c2" minmax(6em, auto)
             "c3 c3 c4 c4 c5 c5" minmax(6em, auto)
+            "st1 st1 st1 st1 st1 st1" minmax(auto, auto)
             "c6 c7 c7 c7 c8 c8" minmax(3em, 16em)
             "c9 c7 c7 c7 c8 c8" minmax(3em, 16em)
+            "- - - - - -" minmax(1.5em, auto)
         ;
     }
 }
@@ -126,6 +136,10 @@ body {
 
 #card5 {
     grid-area: c5;
+}
+
+#sectionTitle1 {
+    grid-area: st1;
 }
 
 #card6 {
